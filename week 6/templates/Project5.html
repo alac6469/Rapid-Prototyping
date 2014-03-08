@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+  <head>
+    <title>My Webpage</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.js">
+    </script>
+  </head>
+  <body>
+    <div align="center">
+      <h1> User Account Creation: </h1>
+      <form name="input" id="form1">
+      Username: <input type="text" id="getuser" name="user"><br>
+      Email: <input type="text" id="getemail" name="email"><br>
+
+      <input type="button" value="Submit" id="mybutton">
+      </form>
+    </div>
+    <div id='results'> {{ result }}</div>
+    <script>
+      $("#mybutton").click(function(e)
+        {
+            var u = $("#getuser").val();
+            var e = $("#getemail").val();
+            $.ajax(
+            {
+                url : "/home",
+                type: "POST",
+                data : {user: u, email: e},
+                success:function(response) 
+                {
+                  
+                  var myDiv = $('#results');
+                  myDiv.html(response);
+                }
+            })
+            //e.preventDefault(); //STOP default action
+        })     
+      //$("#form1").submit(); //Submit  the FORM
+    </script>
+  </body>
+</html>

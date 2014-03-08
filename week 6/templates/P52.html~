@@ -1,0 +1,14 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+  <head>
+    <title>My Webpage</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.js">
+    </script>
+  </head>
+  <body>
+    <div align="center">
+      <h1> Welcome {{ u }}! </h1>
+      <p> You're email: {{ s }}! </p>
+    </div>
+  </body>
+</html>

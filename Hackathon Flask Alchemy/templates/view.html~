@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta charset="utf-8">
+    <!-- Bootstrap -->
+    <link href="{{ url_for('static', filename="css/bootstrap.min.css") }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename="css/bootstrap.css") }}" rel="stylesheet" type="text/css">
+<link href="{{ url_for('static', filename="js/bootstrap.css") }}">
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="masthead">
+        <h1 class="text-muted">ExoticSeedSwap.com</h1>
+        
+        <h2> John Miller <span class="label label-primary">New Member!</span></h2>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="http://images.halloweencostumes.com/products/17818/1-1/amish-man-costume.jpg" align="center" width="270">
+            <div class="row">
+              <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail">
+                <img src="http://i.telegraph.co.uk/multimedia/archive/02020/BY2504_2020450c.jpg" alt="...">
+                </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail">
+                <img src="http://2.bp.blogspot.com/-IN4BD6FbQjw/TpQ9UxBwMVI/AAAAAAAAA4U/TphjDDG3Urk/s1600/large_amish-forgive.jpg" alt="...">
+                </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail">
+                <img src="http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2012/9/21/1348183611148/Amish-man-Sam-Mullet-010.jpg" alt="...">
+                </a>
+              </div>
+            </div>
+            <a href="#">View all photos <span class="badge">12</span></a>
+          </div>
+          <div class="col-md-8">
+            <div class="alert alert-success">
+              <p>Hello there! I'm new here so give me a warm welcome and send me a message
+                or show me that you're interested!</p>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="well well-lg">
+                  <h3 align="center">About Me</h3>
+                  <p> Age: 45</p>
+                  <p> Seeking: Bonnets ages 32 to 40</p>
+                  <p> Interests: I enjoy using the Internet and long walks on the beach</p>
+
+                </div>
+                <div class="btn-group">
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Contact Me! <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Mail</a></li>
+                      <li><a href="#">Phone</a></li>
+                      <li><a href="#">Instant Message</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Horse carraige</a></li>
+                      </ul>
+                    </div>
+                <button type="button" class="btn btn-danger">Show Interest</button>
+              </div>
+              <div class="col-md-6">
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Connect with Facebook</h3>
+                  </div>
+                  <div class="panel-body">
+                    <p> Connect with John on facebook 
+                      <a href="#">here</a></p>
+                  </div>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
